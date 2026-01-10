@@ -32,6 +32,19 @@ st.markdown("""
     .check-item { margin-bottom: 5px; font-size: 12.5px; font-weight: 600; color: #0F172A; }
     .footer { text-align: center; font-size: 10px; color: #94A3B8; margin-top: 30px; border-top: 1px solid #E2E8F0; padding-top: 10px; }
     </style>
+
+    """, unsafe_allow_html=True)
+# 모바일 환경 최적화 스타일 추가
+st.markdown("""
+    <style>
+    /* 모바일에서 글자 크기 최적화 */
+    @media (max-width: 640px) {
+        .main-title { font-size: 1.1rem !important; }
+        .sub-title { font-size: 0.75rem !important; }
+        .check-item { width: 100% !important; } /* 리스트를 한 줄에 하나씩 */
+        .info-card { padding: 10px; }
+    }
+    </style>
     """, unsafe_allow_html=True)
 
 # --- 2. 상단 헤더 ---
